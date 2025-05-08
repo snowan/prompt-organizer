@@ -153,15 +153,15 @@ function App() {
           {filteredPrompts.map(prompt => (
             <div
               key={prompt.id}
-              className="group bg-white rounded-lg shadow p-6 hover:shadow-md transition-shadow relative"
+              className="bg-white rounded-lg shadow p-6"
             >
               <h2 className="text-xl font-semibold mb-2">{prompt.title}</h2>
               <div className="mb-4">
-                <div className="text-gray-800 font-mono whitespace-pre-line break-words">
+                <div className="text-gray-800 font-mono whitespace-pre-line break-words mb-3">
                   {prompt.promptText}
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-95 flex items-center justify-center px-4 py-6 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
-                  <span className="text-gray-600 text-center">{prompt.description}</span>
+                <div className="text-gray-600 mt-2">
+                  {prompt.description}
                 </div>
               </div>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -177,13 +177,13 @@ function App() {
               <div className="flex justify-end space-x-2">
                 <button
                   onClick={() => handleEditPrompt(prompt)}
-                  className="px-3 py-1 text-blue-600 hover:text-blue-800"
+                  className="px-3 py-1 bg-blue-50 text-blue-600 rounded"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDeletePrompt(prompt.id)}
-                  className="px-3 py-1 text-red-600 hover:text-red-800"
+                  className="px-3 py-1 bg-red-50 text-red-600 rounded"
                 >
                   Delete
                 </button>
@@ -194,7 +194,7 @@ function App() {
 
         <button
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-8 right-8 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors"
+          className="fixed bottom-8 right-8 bg-blue-500 text-white p-4 rounded-full shadow-lg"
         >
           <svg
             className="w-6 h-6"

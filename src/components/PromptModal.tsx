@@ -67,7 +67,7 @@ export const PromptModal: React.FC<PromptModalProps> = ({
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700"
+            className="text-gray-500"
           >
             <svg
               className="w-6 h-6"
@@ -139,7 +139,7 @@ export const PromptModal: React.FC<PromptModalProps> = ({
                   <button
                     type="button"
                     onClick={() => removeTag(tag)}
-                    className="ml-2 text-blue-600 hover:text-blue-800"
+                    className="ml-2 text-blue-600"
                   >
                     ×
                   </button>
@@ -160,13 +160,13 @@ export const PromptModal: React.FC<PromptModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200"
+              className="px-4 py-2 text-gray-700 bg-gray-100 rounded-md"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600"
+              className="px-4 py-2 text-white bg-blue-500 rounded-md"
             >
               Save
             </button>
