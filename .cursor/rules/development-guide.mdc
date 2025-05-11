@@ -1,0 +1,30 @@
+---
+title: "Development Guide"
+---
+
+# Development Guide
+
+## Getting Started
+
+1. Install dependencies with `npm install`
+2. Start development server with `npm run dev`
+3. Access the app at http://localhost:5173/
+
+## Build Configuration
+
+- Vite configuration: [vite.config.ts](mdc:vite.config.ts)
+- TypeScript configuration: [tsconfig.json](mdc:tsconfig.json)
+- ESLint configuration: [eslint.config.js](mdc:eslint.config.js)
+- Tailwind configuration: [tailwind.config.js](mdc:tailwind.config.js)
+
+## Adding Features
+
+When adding new features:
+1. Update type definitions in [types.ts](mdc:src/types.ts) if needed
+2. Update database schema in [db.ts](mdc:src/db.ts) if needed
+3. Add new UI components in [src/components/](mdc:src/components)
+4. Update main application logic in [App.tsx](mdc:src/App.tsx)
+
+## Building for Production
+
+Run `npm run build` to create a production build in the `dist` directory.

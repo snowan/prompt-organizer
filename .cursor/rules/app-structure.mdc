@@ -1,0 +1,28 @@
+---
+title: "Application Structure"
+---
+
+# Application Structure
+
+## Main Application Flow
+
+The application follows this general flow:
+1. [main.tsx](mdc:src/main.tsx) initializes React and renders the App component
+2. [App.tsx](mdc:src/App.tsx) contains the main application logic including:
+   - Managing prompts (add, edit, delete)
+   - Filtering and sorting
+   - UI layout and components
+3. [PromptModal.tsx](mdc:src/components/PromptModal.tsx) handles the form for creating/editing prompts
+
+## Database Structure
+
+The app uses Dexie.js (IndexedDB wrapper) for local storage:
+- Database setup: [db.ts](mdc:src/db.ts)
+- Data structures: [types.ts](mdc:src/types.ts)
+
+## UI Architecture
+
+The UI is built with:
+- Tailwind CSS for styling: [tailwind.config.js](mdc:tailwind.config.js), [index.css](mdc:src/index.css)
+- Main layout in App.tsx
+- Modal component for prompt editing

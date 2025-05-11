@@ -1,0 +1,34 @@
+---
+title: "Data Flow"
+---
+
+# Data Flow
+
+## Prompt Data Structure
+
+Prompts have the following structure as defined in [types.ts](mdc:src/types.ts):
+- id: Auto-generated unique identifier
+- title: Name of the prompt
+- content: The actual prompt text
+- description: Optional description
+- tags: Array of string tags for categorization
+- createdAt: Timestamp when created
+- updatedAt: Timestamp when last updated
+
+## Database Operations
+
+Database operations are handled through [db.ts](mdc:src/db.ts) using Dexie.js:
+- Adding new prompts
+- Editing existing prompts
+- Deleting prompts
+- Querying prompts by various criteria
+
+## State Management
+
+The application uses React's useState and useEffect hooks for state management:
+- Prompt list state
+- Filter and sort state
+- Modal state for adding/editing
+- Search query state
+
+All major state management happens in [App.tsx](mdc:src/App.tsx).

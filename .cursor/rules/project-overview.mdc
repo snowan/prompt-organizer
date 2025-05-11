@@ -1,0 +1,26 @@
+---
+title: "Project Overview"
+---
+
+# Prompt Organizer
+
+This is a React application for organizing and managing AI prompts with the following features:
+- Save, edit, and delete prompts
+- Add tags to prompts for categorization
+- Search and filter prompts
+- Local storage (IndexedDB) for persistence
+
+## Core Files
+
+- Entry point: [src/main.tsx](mdc:src/main.tsx)
+- Main application: [src/App.tsx](mdc:src/App.tsx)
+- Component definitions: [src/components/PromptModal.tsx](mdc:src/components/PromptModal.tsx)
+- Database configuration: [src/db.ts](mdc:src/db.ts)
+- Type definitions: [src/types.ts](mdc:src/types.ts)
+
+## Technology Stack
+
+- React (with TypeScript)
+- Tailwind CSS for styling
+- Dexie.js (IndexedDB wrapper) for local storage
+- Vite for build and development
